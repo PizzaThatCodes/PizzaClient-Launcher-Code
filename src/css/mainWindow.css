@@ -1,0 +1,118 @@
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow: hidden;
+      -webkit-user-select: none; /* Safari */        
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE10+/Edge */
+      user-select: none; /* Standard */
+  }
+
+  div .title {
+    color: black;
+    transform: translate(-50%, -50%);
+    margin-left: 50%;
+    margin-top: 20%;
+    position: fixed;
+    align-items: center;
+    /* font-size: 100px; */
+    font: 800 100px Arial;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 5px;
+  }
+
+
+  body {
+    overflow-x: hidden;
+    font-family: Sans-Serif;
+    margin: 0;
+  }
+
+
+  .win {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../imgs/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: white;
+  }
+
+
+li, a, button {
+  -webkit-app-region: no-drag;
+  font-weight: 500;
+  font-size: 20px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav {
+  -webkit-app-region: drag;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: rgba(0, 0, 0, 0.555);
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #0088a9;
+}
+
+.close button {
+  /* padding: 9px 25px; */
+  color: rgba(255,0,0,1);
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 35px;
+}
+
+.close button:hover {
+  color: rgba(255,0,0,0.8);
+}
+
+.launch button:hover {
+  background-color: rgb(148, 80, 3, 3);
+}
+
+.launch button {
+  padding: 9px 25px;
+  background-color: rgb(151, 99, 3);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 35px;
+}
+
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

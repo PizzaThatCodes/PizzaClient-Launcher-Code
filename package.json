@@ -1,0 +1,42 @@
+{
+  "name": "pizzaclient-launcher",
+  "productName": "PizzaClient",
+  "version": "1.0.0",
+  "description": "Launcher For The Minecraft Client PizzaClient",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "PizzaClient",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "installerIcon": "icon.ico",
+      "uninstallDisplayName": "PizzaClient Unistaller",
+      "license": "license.md",
+      "allowToChangeInstallationDirectory": false,
+      "createDesktopShortcut": true
+    }
+  },
+  "author": "PizzaLover (PizzaThatCodes)",
+  "license": "MIT",
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "child_process": "^1.0.2",
+    "electron-updater": "^5.0.5",
+    "file-download": "^0.1.2",
+    "jquery": "^3.6.0",
+    "nodejs-file-downloader": "^4.9.3"
+  },
+  "devDependencies": {
+    "electron": "^18.2.0",
+    "electron-builder": "^22.11.7"
+  }
+}
